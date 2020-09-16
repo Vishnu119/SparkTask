@@ -1,0 +1,31 @@
+{
+  "name": "spark_task",
+  "version": "1.0.0",
+  "description": "This is the Credit Transfer Task from Sparks Foundation",
+  "main": "index.php",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vishnu119/SparkTask.git"
+  },
+  "author": "Vishnu Vardhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vishnu119/SparkTask/issues"
+  },
+  "homepage": "https://github.com/Vishnu119/SparkTask#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

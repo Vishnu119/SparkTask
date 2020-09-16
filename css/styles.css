@@ -1,0 +1,41 @@
+.row-header{
+    margin: 0px auto;
+    padding: 0px;
+}
+.row-content{
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    min-height: 200px;
+}
+.row-footer{
+    background-color: #455A64;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    color: azure;
+}
+.picture{
+   border-radius: 10%;
+}
+.address{
+    font-size: 80%;
+    margin: 0px auto;
+    color: #010203;
+    padding: 10px 10px 10px 10px;
+}
+
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+.navbar-dark{
+    background-color: #455A64;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #BDBDBD;
+}
+.tab-content{
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    padding: 10px;
+}
