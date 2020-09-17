@@ -34,7 +34,7 @@
 
     <div class="container">
         <div class="row row-content">
-                <div class="col-12 col-sm-6 align-self-center">
+                <div class="col-12 col-sm-6">
                     <div class="row row-content">
                         <div class="col-12">
                             <h3>Happy Transaction</h3>
@@ -61,10 +61,10 @@
                                 </div>
                                 
                                 <div class="form-group row">
-                                    <div class="col-md-4 offset-md-4">
+                                    <div class="col-6 col-md-4 offset-md-4">
                                         <input type="submit" class="btn btn-primary" name="btntran" value="Transfer">
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-6 col-md-4">
                                         <a role="button" class="btn btn-secondary" href="view_users.php">Back</a>
                                     </div>
                                 </div>
@@ -89,7 +89,7 @@
                                     $sqlinsert = "INSERT INTO tranhist (cr_from, cr_to, cr_tran) VALUES ('$sender','$receiver','$amount')";
                                     $res3 = mysqli_query($conn1, $sqlinsert);
                                     if($res3){
-                                        echo "<script>alert('Credit transfered successfully...');</script>";
+                                       echo  "<script>alert('Credit Transfered Successfully...')</script>";
                                     }
                                     else{
                                         echo "Failed to Insert:" . mysqli_error($res3);
@@ -104,7 +104,7 @@
                     $result = mysqli_query($conn1, $sql);
                 ?>
                 <div class="col-12 col-sm-6">
-                    <h2>Transaction History</h2>
+                    <h3>Transaction History</h3>
                     <div class="table-responsive">
                        <table class="table table-striped" style="margin-bottom:80px">
                             <thead class="thead-dark">
