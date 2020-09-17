@@ -40,7 +40,7 @@
     <div class="container">
         <div class="row row-content">
                 <div class="col-12 col-sm-6">
-                    <h3>USER DETAILS</h3>
+                    <h3>User Details</h3>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead class="thead-dark">
@@ -73,9 +73,50 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-8 offset-3 col-sm-3 offset-sm-3 align-self-center">
-                    <a role="button" class="btn btn-primary" href="transfer.php">Make Transactions</a>
-                    <a role="button" class="btn btn-secondary" href="index.php">Back</a>
+                <div class="col-12 col-sm-6 align-self-center">
+                    <h3 style="margin:20px auto;">Add User</h3>
+                    <div class="col-12">
+                            <form action="" method="POST">
+                                <div class="form-group row">
+                                    <label for="username" class="col-md-4 col-form-label"><strong>User Name</strong></label>
+                                    <div class="col-md-8">
+                                        <input type="text" name="username" id="username" class="form-control" placeholder="User Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="mailid" class="col-md-4 col-form-label"><strong>Receiver Name</strong></label>
+                                    <div class="col-md-8">
+                                        <input type="email" name="mailid" id="mailid" class="form-control" placeholder="Mail id" required>
+                                    </div>
+                                </div>                                
+                                <div class="form-group row">
+                                    <div class="col-6 col-md-4 offset-md-4">
+                                        <input type="submit" class="btn btn-primary" name="btnadd" value="Add">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12 col-md-6">
+                                        <a role="button" class="btn btn-primary" href="transfer.php">Make Transactions</a>
+                                        <a role="button" class="btn btn-secondary" href="index.php">Back</a>
+                                    </div>
+                                </div>
+                            </form>
+                            <?php
+                                if( isset($_POST['btnadd'])){
+                                    $newuser = $_POST['username'];
+                                    $newmail = $_POST['mailid'];
+                                    $amount = 50;
+                                    $sqlinsert = "INSERT INTO usertable (u_name, u_email, credits) VALUES ('$newuser','$newmail','$amount')";
+                                    $res3 = mysqli_query($conn, $sqlinsert);
+                                    if($res3){
+                                       echo  "<script>alert('User Registered Successfully...')</script>";
+                                    }
+                                    else{
+                                        echo "Failed to Insert:" . mysqli_error($res3);
+                                    }
+                                }
+                            ?>
+                    </div>
                 </div>
             </div>
         </div>
