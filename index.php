@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="index.html"><img src="img/sparkslogo.png" width="50" height="50"></a>
+            <a class="navbar-brand mr-auto" href="index.php"><img src="img/sparkslogo.png" width="50" height="50"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="index.php"><span class="fa fa-home fa-sm"></span> Home</a></li>
@@ -42,11 +42,12 @@
         </div>
     </header>
 
-    <div class="row row-content">
+    <div class="row row-content align-self-center" style="margin-bottom:80px">
         <div class="col-12 col-sm-4 offset-sm-4">
             <div class="card cardstyle" id="clanguage">
                 <div class="card-header bg-secondary">
-                    <div class="col-12 col-sm-4 offset-sm-4">
+                    <div class="col-12 col-sm-8 offset-sm-2">
+                        <h5>Transactions in a glimpse</h5>
                     </div>
                 </div>
                 <div class="card-body">

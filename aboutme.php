@@ -28,7 +28,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="index.html"><img src="img/sparkslogo.png" width="50" height="50"></a>
+            <a class="navbar-brand mr-auto" href="index.php"><img src="img/sparkslogo.png" width="50" height="50"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="index.php"><span class="fa fa-home fa-sm"></span> Home</a></li>

@@ -21,10 +21,10 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="index.html"><img src="img/sparkslogo.png" width="50" height="50"></a>
+            <a class="navbar-brand mr-auto" href="index.php"><img src="img/sparkslogo.png" width="50" height="50"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="index.php"><span class="fa fa-home fa-sm"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php"><span class="fa fa-home fa-sm"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutme.php"><span class="fa fa-info fa-sm"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="transfer.php"><span class="fa fa-retweet fa-sm"></span>Transactions</a></li>
                 </ul>
@@ -40,7 +40,7 @@
     <div class="container">
         <div class="row row-content">
                 <div class="col-12 col-sm-6">
-                    <h2>User Details</h2>
+                    <h3>USER DETAILS</h3>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead class="thead-dark">
@@ -73,8 +73,9 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-12 col-sm-3 offset-sm-3 align-self-center">
+                <div class="col-8 offset-3 col-sm-3 offset-sm-3 align-self-center">
                     <a role="button" class="btn btn-primary" href="transfer.php">Make Transactions</a>
+                    <a role="button" class="btn btn-secondary" href="index.php">Back</a>
                 </div>
             </div>
         </div>
