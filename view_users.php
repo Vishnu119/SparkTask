@@ -84,7 +84,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="mailid" class="col-md-4 col-form-label"><strong>Receiver Name</strong></label>
+                                    <label for="mailid" class="col-md-4 col-form-label"><strong>Mail id</strong></label>
                                     <div class="col-md-8">
                                         <input type="email" name="mailid" id="mailid" class="form-control" placeholder="Mail id" required>
                                     </div>
