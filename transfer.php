@@ -87,7 +87,7 @@
                                         echo "Failed to Update: " . mysqli_error($res2); 
                                     }
                                     $sqlinsert = "INSERT INTO tranhist (cr_from, cr_to, cr_tran) VALUES ('$sender','$receiver','$amount')";
-                                    $res3 = mysqli_query($conn1, $sqlinsert);
+                                    $res3 = mysqli_query($conn, $sqlinsert);
                                     if($res3){
                                        echo  "<script>alert('Credit Transfered Successfully...')</script>";
                                     }
@@ -101,7 +101,7 @@
                 </div>
                 <?php
                     $sql = "SELECT * FROM tranhist";
-                    $result = mysqli_query($conn1, $sql);
+                    $result = mysqli_query($conn, $sql);
                 ?>
                 <div class="col-12 col-sm-6">
                     <h3>Transaction History</h3>
